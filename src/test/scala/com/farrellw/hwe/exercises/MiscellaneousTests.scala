@@ -28,7 +28,7 @@ class MiscellaneousTests extends FunSpec{
       val expected: Option[Int] =  Some(500)
 
       val actual = Miscellaneous.minimum(input)
-      assert(expected === actual)
+      assert(actual === expected)
     }
 
     it("Returns None if the list is empty"){
