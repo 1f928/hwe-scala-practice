@@ -64,6 +64,6 @@ object Collections {
     / Advanced Problem, feel free to skip /
    */
   def flatMapUsingFoldLeft(l: List[List[String]], f: String => String): List[String] = {
-    l.foldLeft(List[String]())((l2, l3) => l2 :+ l3.split("").map(f(_)))
+    l.foldLeft(List[String]())((l2, l3) => l2 ++ l3.map(f(_)))
   }
 }

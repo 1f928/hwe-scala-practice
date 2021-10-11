@@ -18,7 +18,7 @@ object Miscellaneous {
     If no ints are provided, return None.
    */
   def minimum(l: List[Option[Int]]): Option[Int] = {
-    val ints = l.filter(a => a.isDefined)
+    val ints = l.filter(_.isDefined)
     if (ints.nonEmpty) ints.min else None
   }
 
